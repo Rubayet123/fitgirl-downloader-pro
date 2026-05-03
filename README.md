@@ -2,6 +2,9 @@
 
 FitGirl Downloader Pro is a high-performance, open-source download manager specifically designed to streamline the process of downloading game repacks from high-speed mirror providers. Built with **Tauri**, **React**, and **Rust**, it offers a native, lightweight, and blazing-fast experience.
 
+<img src="./fitgirl-downloader-pro-app.jpg">
+
+
 ---
 
 ## ✨ Features
