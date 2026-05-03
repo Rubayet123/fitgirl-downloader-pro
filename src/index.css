@@ -1,0 +1,109 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg-base: var(--base-bg, #0E0E10);
+  --color-bg-surface: var(--surface-bg, #1A1A1F);
+  --color-bg-raised: var(--raised-bg, #242429);
+  --color-border-subtle: var(--subtle-border, #2E2E35);
+  --color-accent: var(--dynamic-accent, #6C63FF);
+  --color-accent-hover: var(--dynamic-accent-hover, #7B74FF);
+  --color-success: #3DDC84;
+  --color-warning: #FFB347;
+  --color-danger: #FF5F5F;
+  --color-text-primary: var(--primary-text, #F0F0F5);
+  --color-text-muted: var(--muted-text, #72727A);
+
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  
+  --radius-app: 8px;
+  --radius-sm: 4px;
+}
+
+@layer base {
+  body {
+    @apply bg-bg-base text-text-primary font-sans antialiased transition-colors duration-300;
+  }
+}
+
+/* Theme Definitions using Variables */
+[data-theme='oled'] {
+  --base-bg: #000000;
+  --surface-bg: #0a0a0a;
+  --raised-bg: #111111;
+  --subtle-border: #1a1a1a;
+}
+
+[data-theme='legacy'] {
+  --base-bg: #001524;
+  --surface-bg: #02203c;
+  --raised-bg: #052c54;
+}
+
+[data-theme='nordic'] {
+  --base-bg: #2e3440;
+  --surface-bg: #3b4252;
+  --raised-bg: #434c5e;
+  --subtle-border: #4c566a;
+  --primary-text: #eceff4;
+  --muted-text: #d8dee9;
+}
+
+[data-theme='cyberpunk'] {
+  --base-bg: #000b00;
+  --surface-bg: #001a00;
+  --raised-bg: #002e00;
+  --subtle-border: #00ff00;
+  --primary-text: #00ff00;
+  --muted-text: #008f00;
+}
+
+[data-theme='dracula'] {
+  --base-bg: #282a36;
+  --surface-bg: #343746;
+  --raised-bg: #44475a;
+  --subtle-border: #6272a4;
+  --primary-text: #f8f8f2;
+  --muted-text: #bd93f9;
+}
+
+[data-theme='macos-light'] {
+  --base-bg: #f6f6f6;
+  --surface-bg: #ffffff;
+  --raised-bg: #e5e5e5;
+  --subtle-border: #d1d1d1;
+  --primary-text: #1d1d1f;
+  --muted-text: #86868b;
+}
+
+[data-theme='macos-dark'] {
+  --base-bg: #1e1e1e;
+  --surface-bg: #2d2d2d;
+  --raised-bg: #3c3c3c;
+  --subtle-border: #4a4a4a;
+  --primary-text: #f5f5f7;
+  --muted-text: #86868b;
+}
+
+[data-theme='windows-light'] {
+  --base-bg: #f3f3f3;
+  --surface-bg: #ffffff;
+  --raised-bg: #f9f9f9;
+  --subtle-border: #e5e5e5;
+  --primary-text: #000000;
+  --muted-text: #616161;
+}
+
+[data-theme='windows-dark'] {
+  --base-bg: #202020;
+  --surface-bg: #272727;
+  --raised-bg: #323232;
+  --subtle-border: #444444;
+  --primary-text: #ffffff;
+  --muted-text: #a1a1a1;
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-bg-surface/80 backdrop-blur-md border border-border-subtle;
+  }
+}

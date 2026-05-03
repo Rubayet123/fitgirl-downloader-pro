@@ -1,0 +1,24 @@
+[package]
+name = "fitgirl-downloader-pro"
+version = "1.0.0"
+description = "High-performance FitGirl Repack downloader."
+authors = ["Rubayet Alam"]
+edition = "2021"
+rust-version = "1.60"
+
+[build-dependencies]
+tauri-build = { version = "1.5", features = [] }
+
+[dependencies]
+tauri = { version = "1.5", features = ["http-all", "shell-open", "path-all", "fs-all"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+reqwest = { version = "0.11", features = ["json", "cookies"] }
+scraper = "0.17"
+tokio = { version = "1", features = ["full"] }
+regex = "1.9"
+futures-util = "0.3"
+
+[features]
+default = ["custom-protocol"]
+custom-protocol = ["tauri/custom-protocol"]
