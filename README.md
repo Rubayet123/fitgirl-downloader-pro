@@ -1,6 +1,6 @@
-# FitGirl Downloader Pro (FDP) 🚀
+# FG Downloader Pro (FDP) 🚀
 
-FitGirl Downloader Pro is a high-performance, open-source download manager specifically designed to streamline the process of downloading game repacks from high-speed mirror providers. Built with **Tauri**, **React**, and **Rust**, it offers a native, lightweight, and blazing-fast experience.
+FG Downloader Pro is a high-performance, open-source download manager specifically designed to streamline the process of downloading repacks from high-speed mirror providers. Built with **Tauri**, **React**, and **Rust**, it offers a native, lightweight, and blazing-fast experience.
 
 <img src="./fitgirl-downloader-pro-app.jpg">
 
@@ -69,7 +69,7 @@ The output will be located in `src-tauri/target/release/FitGirl Downloader Pro.e
 
 ## 📜 Disclaimer
 
-**FitGirl Downloader Pro** is a link resolution and download management utility. We do not host, store, or distribute any game files. This tool is intended for personal use in managing downloads from legal sources. Users are responsible for complying with their local copyright laws and regulations.
+**FG Downloader Pro** is a link resolution and download management utility. We do not host, store, or distribute any game files. This tool is intended for personal use in managing downloads from legal sources. Users are responsible for complying with their local copyright laws and regulations.
 
 ---
 
